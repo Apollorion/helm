@@ -4,7 +4,7 @@ I drop all my helm charts for all my projects here.
 
 ## Using this repo
 
-1. `helm repo add https://apollorion.github.io/helm/`
+1. `helm repo add apollorion https://apollorion.github.io/helm/`
 2. HUZZAH
 
 ## Contributing to this repo
