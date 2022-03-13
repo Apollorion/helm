@@ -1,0 +1,37 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Helm tool installer
+        uses: Azure/setup-helm@v2.0
+
+      - name: "Build repo index"
+        run: |
+          helm repo index --url https://apollorion.github.io/helm/ .
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v8.8
+        id: verify-changed-files
+        with:
+          files: |
+            index.yaml
+
+      - name: "Push repo index"
+        if: contains(steps.verify-changed-files.outputs.changed_files, 'index.yaml')
+        run: |
+          git config user.name helm-repo-bot
+          git config user.email helm-repo-bot@users.noreply.github.com
+          git add .
+          git commit -m "ci: update index.yaml"
+          git pull --rebase origin main
+          git push origin main
