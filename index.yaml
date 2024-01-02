@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   homedydns:
   - apiVersion: v2
-    created: "2022-03-13T03:21:31.362636614Z"
+    created: "2024-01-02T18:31:09.200654729Z"
     description: A Helm chart for Updating route53 with your home ip address
     digest: 4b06996b116ef548653cd85e143deb731510e0ee727d7f1cef6b72da29bdf931
     name: homedydns
@@ -11,7 +11,7 @@ entries:
     - https://apollorion.github.io/helm/homedydns-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v2
-    created: "2022-03-13T03:21:31.362393527Z"
+    created: "2024-01-02T18:31:09.200467977Z"
     description: A Helm chart for Updating route53 with your home ip address
     digest: 4fd4f64635948038119e9e2d61a83b18bd688f7cd07467677a341b90f417a2b7
     name: homedydns
@@ -20,7 +20,7 @@ entries:
     - https://apollorion.github.io/helm/homedydns-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
-    created: "2022-03-13T03:21:31.36214604Z"
+    created: "2024-01-02T18:31:09.200270395Z"
     description: A Helm chart for Updating route53 with your home ip address
     digest: 2a12b425bfec4793a8ec9f3b8d92c05e8915186b3eda086e4af47deae22d791c
     name: homedydns
@@ -29,7 +29,7 @@ entries:
     - https://apollorion.github.io/helm/homedydns-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
-    created: "2022-03-13T03:21:31.361892953Z"
+    created: "2024-01-02T18:31:09.199810925Z"
     description: A Helm chart for Updating route53 with your home ip address
     digest: de064c391dd897626a81af497a635ed51ffa4d2b852377eed1e220de21b311d9
     name: homedydns
@@ -37,4 +37,4 @@ entries:
     urls:
     - https://apollorion.github.io/helm/homedydns-1.0.0.tgz
     version: 1.0.0
-generated: "2022-03-13T03:21:31.360556221Z"
+generated: "2024-01-02T18:31:09.19913397Z"
