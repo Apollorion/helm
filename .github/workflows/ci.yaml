@@ -20,7 +20,7 @@ jobs:
           helm repo index --url https://apollorion.github.io/helm/ .
 
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v8.8
+        uses: tj-actions/verify-changed-files@v17
         id: verify-changed-files
         with:
           files: |
